@@ -1,0 +1,60 @@
+html, body{
+  font-family: 'Alata', sans-serif;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(125,189,218,1) 100%);
+}
+
+.navbutton{
+  cursor:pointer;
+  font-size: 32px;
+}
+select, button {
+  padding:10px;
+  margin:10px auto auto auto;
+  display:block;
+  cursor:pointer;
+  font-family: 'Alata', sans-serif;
+  font-size: 14px;
+}
+
+.insidenav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 25px;
+  margin-left: 50px;
+  height: 100%;
+  width: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: white;
+}
+.insidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+.insidenav a:hover{
+  text-decoration:underline;
+}
+
+.closenav{
+  cursor:pointer;
+}
+#country, #state{
+  width:150px;
+}
+.circle{
+  font-size: 34px;
+  height:200px;
+  width:200px;
+  margin:auto;
+  border-radius: 50%;
+  background-color:transparent;
+  border: 1.5px solid grey;
+  text-align: center;
+  line-height:120px;
+}

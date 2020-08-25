@@ -3,10 +3,38 @@
   <head>
     <title>Corona</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\home.css">
+    <link rel="stylesheet" href="css\index.css">
     <script src="js\javascript.js"></script>
+    <script src="js\info.json"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
   </head>
   <body>
-      
+    <!--navigation button-->
+    <span class="navbutton" onclick="opennav()">&#9776;</span>
+    <!--Inside navigation-->
+    <div class="insidenav" id="insidenav">
+      <a href="index.html">Coronavirus Cases</a>
+      <a href="about.html">About Coronavirus</a>
+      <a href="#">What to do</a>
+      <a href="#">Resources</a>
+  </div>
+    <!--Shows the number of cases in circle-->
+      <div class="circle">
+        <p id="showcases">0</p>
+      </div>
+    <select id="country">
+      <option value="australia">Australia</option>
+    </select>
+    <select id="state">
+      <option value="1">NT</option>
+      <option value="2">QLD</option>
+      <option value="3">VIC</option>
+      <option value="4">NSW</option>
+      <option value="5">WA</option>
+      <option value="6">SA</option>
+    </select>
+    <button onclick="showcase()">Show me</button>
+
+    <p>Only Australia is available for the time being.</p>
   </body>
 </html>
