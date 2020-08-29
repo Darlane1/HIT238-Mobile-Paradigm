@@ -50,6 +50,7 @@ select, button {
   width:150px;
 }
 .circle{
+  display:none;
   font-size: 34px;
   height:200px;
   width:200px;
@@ -62,4 +63,14 @@ select, button {
 }
 .text-wrapper{
   padding:30px;
+}
+
+#state_name{
+  margin:auto;
+  text-align: center;
+  padding:20px;
+}
+img{
+  max-width:100%;
+  height:auto;
 }

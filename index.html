@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Corona</title>
+    <title>Coronavirus Count</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\index.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -15,14 +14,16 @@
       <a href="index.html">Home: Coronavirus Cases</a>
       <a href="about.html">About Coronavirus</a>
       <a href="whatnow.html">What to do</a>
-      <a href="#">Resources</a>
+      <a href="sources.html">Resources</a>
   </div>
+  <h1 id="state_name"></h1>
     <!--Shows the number of cases in circle-->
       <div class="circle">
         <p id="showcases">0</p>
       </div>
     <select id="country">
-      <option value="australia">Australia</option>
+      <option value="">Choose Country:</option>
+      <option value="1">Australia</option>
     </select>
     <select id="state">
       <option value="">Choose State:</option>
@@ -34,7 +35,6 @@
       <option value="6">SA</option>
     </select>
     <button onclick="showcase()">Show me</button>
-    <p id="iii"></p>
     <p>Only Australia is available for the time being.</p>
   </body>
   <!--SCRIPTS-->
