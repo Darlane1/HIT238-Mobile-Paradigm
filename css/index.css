@@ -1,6 +1,5 @@
 html, body{
   font-family: 'Alata', sans-serif;
-/**  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(125,189,218,1) 100%); **/
 }
 
 .navbutton{
@@ -49,7 +48,7 @@ select, button {
 #country, #state{
   width:150px;
 }
-.circle{
+#circle{
   display:none;
   font-size: 34px;
   height:200px;
@@ -70,7 +69,11 @@ select, button {
   text-align: center;
   padding:20px;
 }
-img{
-  max-width:100%;
-  height:auto;
+.placeholder{
+  border:1px solid red;
+  max-width: 100%
+}
+
+._link{
+  display:none;
 }

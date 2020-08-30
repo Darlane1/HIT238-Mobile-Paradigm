@@ -27,7 +27,9 @@ var australia = {
 
 
 function showcase(){
-  document.getElementsByClassName("circle")[0].style.display="block";
+  document.getElementById("circle").style.display="block";
+  document.getElementsByClassName("_link")[0].style.display="block";
+  document.getElementsByClassName("_link")[1].style.display="block";
   if(document.getElementById('state').value == '1' && document.getElementById('country').value == '1'){
     document.getElementById('showcases').innerHTML=australia.nt.caseno; document.getElementById("state_name").innerHTML = australia.nt.state;}
   else if (document.getElementById('state').value == '2' && document.getElementById('country').value == '1'){
