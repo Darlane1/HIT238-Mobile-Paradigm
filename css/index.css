@@ -1,7 +1,6 @@
 html, body{
   font-family: 'Alata', sans-serif;
 }
-
 .navbutton{
   cursor:pointer;
   font-size: 32px;
@@ -14,7 +13,6 @@ select, button {
   font-family: 'Alata', sans-serif;
   font-size: 14px;
 }
-
 .insidenav{
   position: absolute;
   top: 0;
@@ -41,7 +39,6 @@ select, button {
   transition: .2s ease-in-out;
   transform: scale(1.1);
 }
-
 .closenav{
   cursor:pointer;
 }
@@ -49,7 +46,6 @@ select, button {
   width:150px;
 }
 #circle{
-  display:none;
   font-size: 34px;
   height:200px;
   width:200px;
@@ -69,11 +65,22 @@ select, button {
   text-align: center;
   padding:20px;
 }
+
+#hide_count{
+  margin:auto;
+  text-align: center;
+  padding:20px;
+  display:none;
+}
+#hide_count h1,h3{
+  line-height:0px;
+}
 .placeholder{
-  border:1px solid red;
   max-width: 100%
 }
 
 ._link{
   display:none;
 }
+
+#state{display:none}

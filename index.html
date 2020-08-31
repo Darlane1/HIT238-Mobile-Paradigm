@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
   </head>
   <body>
+
     <!--navigation button-->
     <span class="navbutton" onclick="opennav()">&#9776;</span>
     <!--Inside navigation-->
@@ -14,14 +15,21 @@
       <a href="index.html">Home: Coronavirus Cases</a>
       <a href="about.html">About Coronavirus</a>
       <a href="whatnow.html">What to do</a>
-      <a href="sources.html">Resources</a>
+      <a href="sources.html">Sources</a>
   </div>
+
+  <!--Shows the name of state, "active cases" and shows the circle with number in it-->
+  <div id="hide_count">
   <h1 id="state_name"></h1>
-    <!--Shows the number of cases in circle-->
+  <h3>Active Cases</h3>
+  <p><small>(As of 31 August 2020)</small></p>
       <div id="circle">
         <p id="showcases">0</p>
       </div>
-    <select id="country">
+    </div>
+
+  <!--Shows the select options and button-->
+    <select id="country" onchange="show_state()">
       <option value="">Choose Country:</option>
       <option value="1">Australia</option>
     </select>
@@ -33,10 +41,15 @@
       <option value="4">NSW</option>
       <option value="5">WA</option>
       <option value="6">SA</option>
+      <option value="7">TAS</option>
     </select>
     <button onclick="showcase()">Show me</button>
-    <a href="#" class="_link" style="text-align:left">What does this mean?</a>
-    <a href="#" class="_link" style="text-align:right">What are the precautions to take?</a>
+
+    <div style="clear:both">
+      <a href="about.html" class="_link" style="float:left">Learn More</a>
+      <a href="whatnow.html" class="_link" style="float:right">What to do now</a>
+    </div>
+    <br>
     <p>Only Australia is available for the time being.</p>
   </body>
   <!--SCRIPTS-->
