@@ -1,31 +1,38 @@
 var australia = {
   "nt":{
     "state":"Northern Territory",
+    "deaths":"0",
     "caseno":"0"
   },
   "qld":{
     "state":"Queensland",
-    "caseno":"27"
+    "deaths":"6",
+    "caseno":"25"
   },
   "sa":{
     "state":"South Australia",
-    "caseno":"1"
+    "deaths":"4",
+    "caseno":"0"
   },
   "wa":{
     "state":"Western Australia",
-    "caseno":"5"
+    "deaths":"9",
+    "caseno":"4"
   },
   "vic":{
     "state":"Victoria",
-    "caseno":"2,620"
+    "deaths":"683",
+    "caseno":"1,696"
   },
   "nsw":{
     "state":"New South Wales",
-    "caseno":"174"
+    "deaths":"52",
+    "caseno":"144"
   },
   "tas":{
     "state":"Tasmania",
-    "caseno":"1"
+    "deaths":"13",
+    "caseno":"0"
   }
 };
 function show_state(){
@@ -35,7 +42,7 @@ function show_state(){
 
 function showcase(){
   var _australia = document.getElementById('country').value == '1';
-  var state_value = document.getElementById('state').value ;
+  var state_value = document.getElementById('state').value;
   document.getElementById("hide_count").style.display="block";
   document.getElementsByClassName("_link")[0].style.display="block";
   document.getElementsByClassName("_link")[1].style.display="block";
