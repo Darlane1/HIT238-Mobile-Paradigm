@@ -41,6 +41,11 @@ var australia = {
   }
 };
 
+fetch('js/data.json')
+    .then(function(response) {
+        console.log(response);
+    });
+
 function show_state(){
   if(document.getElementById('country').value='1'){
   document.getElementById('state').style.display="block"}
