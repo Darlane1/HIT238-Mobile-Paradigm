@@ -74,8 +74,9 @@ select, button {
 #hide_count h1,h3{
   line-height:0px;
 }
-.placeholder{
-  max-width: 100%
+
+img{
+  max-width: 100%;
 }
 ._link{
   display:none;
@@ -98,3 +99,14 @@ select, button {
   color: red;
   text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+  img{
+    width:100%;
+  }
+  ._link,._link2{
+    width:100%;
+    text-align: center;
+    padding:3px;
+  }
+    }
