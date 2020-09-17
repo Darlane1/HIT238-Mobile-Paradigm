@@ -94,3 +94,7 @@ select, button {
 #state{
   display:none
 }
+#pls_pick{
+  color: red;
+  text-align: center;
+}

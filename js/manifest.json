@@ -1,6 +1,8 @@
 {
-  "name":"Coronavirus Counter",
+  "name":"Coronavirus Case Counter",
   "short_name":"Corona Counter",
+  "description":"A progessive web application based around COVID-19",
   "display":"fullscreen",
-  "background_color":"#fff"
+  "background_color":"#fff",
+  "orientation":"portrait",
 }

@@ -1,4 +1,8 @@
 var australia = {
+  "aus":{
+    "state":"Australia",
+    "caseno":"26,808"
+  },
   "nt":{
     "state":"Northern Territory",
     "deaths":"0",
@@ -43,23 +47,37 @@ function show_state(){
 function showcase(){
   var _australia = document.getElementById('country').value == '1';
   var state_value = document.getElementById('state').value;
+
+  if (document.getElementById('country').value > 0){
   document.getElementById("hide_count").style.display="block";
   document.getElementsByClassName("_link")[0].style.display="block";
-  document.getElementsByClassName("_link")[1].style.display="block";
-  if(state_value == '1' && _australia){
-    document.getElementById('showcases').innerHTML= australia.nt.caseno; document.getElementById("state_name").innerHTML = australia.nt.state;}
+  document.getElementsByClassName("_link")[1].style.display="block";}
+  else {alert("Please Enter A Country");}
+
+  if (state_value =='0' && _australia){
+    document.getElementById('showcases').innerHTML= australia.aus.caseno;
+    document.getElementById("state_name").innerHTML = australia.aus.state;}
+  else if (state_value == '1' && _australia){
+    document.getElementById('showcases').innerHTML= australia.nt.caseno;
+    document.getElementById("state_name").innerHTML = australia.nt.state;}
   else if (state_value == '2' && _australia){
-    document.getElementById('showcases').innerHTML= australia.qld.caseno; document.getElementById("state_name").innerHTML = australia.qld.state;}
+    document.getElementById('showcases').innerHTML= australia.qld.caseno;
+    document.getElementById("state_name").innerHTML = australia.qld.state;}
   else if (state_value == '3' && _australia){
-    document.getElementById('showcases').innerHTML= australia.vic.caseno; document.getElementById("state_name").innerHTML = australia.vic.state;}
+    document.getElementById('showcases').innerHTML= australia.vic.caseno;
+    document.getElementById("state_name").innerHTML = australia.vic.state;}
   else if (state_value == '4' && _australia){
-    document.getElementById('showcases').innerHTML= australia.nsw.caseno; document.getElementById("state_name").innerHTML = australia.nsw.state;}
+    document.getElementById('showcases').innerHTML= australia.nsw.caseno;
+    document.getElementById("state_name").innerHTML = australia.nsw.state;}
   else if (state_value == '5' && _australia){
-    document.getElementById('showcases').innerHTML= australia.wa.caseno; document.getElementById("state_name").innerHTML = australia.wa.state;}
+    document.getElementById('showcases').innerHTML= australia.wa.caseno;
+    document.getElementById("state_name").innerHTML = australia.wa.state;}
   else if (state_value == '6' && _australia){
-    document.getElementById('showcases').innerHTML= australia.sa.caseno; document.getElementById("state_name").innerHTML = australia.sa.state;}
+    document.getElementById('showcases').innerHTML= australia.sa.caseno;
+    document.getElementById("state_name").innerHTML = australia.sa.state;}
   else if (state_value == '7' && _australia){
-    document.getElementById('showcases').innerHTML= australia.tas.caseno; document.getElementById("state_name").innerHTML = australia.tas.state;}
+    document.getElementById('showcases').innerHTML= australia.tas.caseno;
+    document.getElementById("state_name").innerHTML = australia.tas.state;}
 }
 
 function opennav(){
