@@ -41,6 +41,15 @@ var australia = {
   }
 };
 
+fetch('js/data.json')
+    .then(function(response) {
+        console.log(response);
+<<<<<<< HEAD
+        console.log("This worked")
+=======
+>>>>>>> 26bd45061ea0fdbdd5234e8c37242ba8a352b59f
+    });
+
 function show_state(){
   if(document.getElementById('country').value='1'){
   document.getElementById('state').style.display="block"}
