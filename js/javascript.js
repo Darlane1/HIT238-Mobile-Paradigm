@@ -1,6 +1,7 @@
 var australia = {
   "aus":{
     "state":"Australia",
+    "deaths":"832",
     "caseno":"26,808"
   },
   "nt":{
@@ -11,7 +12,7 @@ var australia = {
   "qld":{
     "state":"Queensland",
     "deaths":"6",
-    "caseno":"25"
+    "caseno":"27"
   },
   "sa":{
     "state":"South Australia",
@@ -21,17 +22,17 @@ var australia = {
   "wa":{
     "state":"Western Australia",
     "deaths":"9",
-    "caseno":"4"
+    "caseno":"5"
   },
   "vic":{
     "state":"Victoria",
-    "deaths":"683",
-    "caseno":"1,696"
+    "deaths":"745",
+    "caseno":"991"
   },
   "nsw":{
     "state":"New South Wales",
     "deaths":"52",
-    "caseno":"144"
+    "caseno":"148"
   },
   "tas":{
     "state":"Tasmania",
