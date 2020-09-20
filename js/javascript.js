@@ -38,20 +38,26 @@ var australia = {
     "state":"Tasmania",
     "deaths":"13",
     "caseno":"0"
-  }};
+  }
+};
 var usa = {
   "usa":{
     "state":"",
     "deaths":"",
     "caseno":""
   }
-}
-console.log(usa);
+};
+
+
 //Ausrtalia has states, so if Australia is chosen, the states select box will show
 function show_state(){
-  if(document.getElementById('country').value='1'){
+  if(document.getElementById('country').value=='1'){
   document.getElementById('state').style.display="block"}
-}
+  else if(document.getElementById('country').value=='2'){
+    document.getElementById('state').style.display="none";
+    console.log("success");}
+  };
+
 //Main 'show me' button
 function showcase(){
   var _australia = document.getElementById('country').value == '1';
