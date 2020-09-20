@@ -116,4 +116,8 @@ img{
     width:100%;
     text-align: center;
   }
+  .text-wrapper{
+    padding:30px;
+    width:90%;
+  }
     }
