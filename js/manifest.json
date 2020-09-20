@@ -6,7 +6,7 @@
   "manifest_version": 2,
   "start_url":"./index.html",
   "start_url":".",
-  "display":"standalone",
+  "display":"browser",
   "background_color":"#ffffff",
   "orientation":"portrait",
   "icons":[
