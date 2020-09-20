@@ -38,24 +38,33 @@ var australia = {
     "state":"Tasmania",
     "deaths":"13",
     "caseno":"0"
+  }};
+var usa = {
+  "usa":{
+    "state":"",
+    "deaths":"",
+    "caseno":""
   }
-};
-
+}
+console.log(usa);
+//Ausrtalia has states, so if Australia is chosen, the states select box will show
 function show_state(){
   if(document.getElementById('country').value='1'){
   document.getElementById('state').style.display="block"}
 }
-
+//Main 'show me' button
 function showcase(){
   var _australia = document.getElementById('country').value == '1';
   var state_value = document.getElementById('state').value;
+  var _usa = document.getElementById('country').value =='2';
 
+//if user does not enter any country or state, an alert will tell user to enter country
   if (document.getElementById('country').value > 0){
   document.getElementById("hide_count").style.display="block";
   document.getElementsByClassName("_link")[0].style.display="block";
   document.getElementsByClassName("_link")[1].style.display="block";}
   else {alert("Please Enter A Country");}
-
+//Will show information based on what user picks
   if (state_value =='0' && _australia){
     document.getElementById('showcases').innerHTML= australia.aus.caseno;
     document.getElementById("state_name").innerHTML = australia.aus.state;}
@@ -81,7 +90,7 @@ function showcase(){
     document.getElementById('showcases').innerHTML= australia.tas.caseno;
     document.getElementById("state_name").innerHTML = australia.tas.state;}
 }
-
+//Side Navigation
 function opennav(){
 if (document.getElementById('insidenav').style.width == '250px')
   {document.getElementById('insidenav').style.width = "0px";

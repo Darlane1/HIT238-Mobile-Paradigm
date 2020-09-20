@@ -1,42 +1,46 @@
-australia = {
-  "aus":{
-    "state":"Australia",
-    "deaths":"832",
-    "caseno":"26,808"
-  },
-  "nt":{
-    "state":"Northern Territory",
-    "deaths":"0",
-    "caseno":"0"
-  },
-  "qld":{
-    "state":"Queensland",
-    "deaths":"6",
-    "caseno":"27"
-  },
-  "sa":{
-    "state":"South Australia",
-    "deaths":"4",
-    "caseno":"0"
-  },
-  "wa":{
-    "state":"Western Australia",
-    "deaths":"9",
-    "caseno":"5"
-  },
-  "vic":{
-    "state":"Victoria",
-    "deaths":"745",
-    "caseno":"991"
-  },
-  "nsw":{
-    "state":"New South Wales",
-    "deaths":"52",
-    "caseno":"148"
-  },
-  "tas":{
-    "state":"Tasmania",
-    "deaths":"13",
-    "caseno":"0"
-  }
-};
+{
+  "australia" : [
+      {
+      "aus":{
+        "state":"Australia",
+        "deaths":"832",
+        "caseno":"26,808"
+      },
+      "nt":{
+        "state":"Northern Territory",
+        "deaths":"0",
+        "caseno":"0"
+      },
+      "qld":{
+        "state":"Queensland",
+        "deaths":"6",
+        "caseno":"27"
+      },
+      "sa":{
+        "state":"South Australia",
+        "deaths":"4",
+        "caseno":"0"
+      },
+      "wa":{
+        "state":"Western Australia",
+        "deaths":"9",
+        "caseno":"5"
+      },
+      "vic":{
+        "state":"Victoria",
+        "deaths":"745",
+        "caseno":"991"
+      },
+      "nsw":{
+        "state":"New South Wales",
+        "deaths":"52",
+        "caseno":"148"
+      },
+      "tas":{
+        "state":"Tasmania",
+        "deaths":"13",
+        "caseno":"0"
+      }
+    }
+  ]
+}
