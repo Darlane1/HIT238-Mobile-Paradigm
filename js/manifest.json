@@ -4,7 +4,7 @@
   "description":"A progessive web application based around COVID-19",
   "version":"0.1",
   "manifest_version": 2,
-  "start_url":"/",
+  "start_url":"https://darlane1.github.io/HIT238-Mobile-Paradigm/",
   "display":"standalone",
   "background_color":"#ffffff",
   "orientation":"portrait",
