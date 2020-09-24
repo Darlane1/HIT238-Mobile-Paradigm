@@ -1,18 +1,19 @@
 var source = document.getElementById("entry-template").innerHTML;
 var template = Handlebars.compile(source);
-var context = { title: "My New Post test", body: "This is my first paadadavvaaddaaost!" };
+var context = { title: "My New Post test", body: "This is my first paadadaaaddaaost!" };
 var html = template(context);
 document.getElementById("content").innerHTML = html;
 
-
-var date = {
-  "day":"20",
-  "month":"September",
-  "year":"2020",
-  "date":function(){
-    return this.day + " " + this.month + " " + this.year;
+let newdate = {
+  day:24,
+  month:`September`,
+  year:2020,
+  saydate(){
+    return (`${this.day} ${this.month} ${this.year}`);
   }
-}
+};
+document.getElementById("as_of").innerHTML = newdate.saydate();
+
 var country = {
 	"australia": {
 		"aus": {
@@ -64,8 +65,7 @@ var country = {
 			}
 		}
 	};
-x = date.date();
-document.getElementById("as_of").innerHTML = x;
+
 
 //Ausrtalia has states, so if Australia is chosen, the states select box will show
 function show_state(){
