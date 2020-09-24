@@ -2,22 +2,15 @@
 <html lang="en">
   <head>
     <title>Coronavirus Count</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\index.css">
-    <link rel="manifest" href="manifest.json">
-    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <span id="head"></span>
   </head>
   <body>
 
     <!--navigation button-->
     <span class="navbutton" onclick="opennav()">&#9776;</span>
     <!--Inside navigation-->
-    <div class="insidenav" id="insidenav">
-      <a href="index.html">Home: Coronavirus Cases</a>
-      <a href="about.html">About Coronavirus</a>
-      <a href="whatnow.html">How to prevent it</a>
-      <a href="sources.html">Sources</a>
-  </div>
+    <span id="navigation"></span>
+
 
   <!--Shows the name of state, "active cases" and shows the circle with number in it-->
   <div id="hide_count">
@@ -56,19 +49,11 @@
       <p id="message">Only Australia is available for the time being.</p>
     </div>
   </div>
-  <p id="content"></p>
 
-  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-  <script id="entry-template" type="text/x-handlebars-template">
-  <div class="entry">
-    <h1>{{title}}</h1>
-    <div class="body">
-      {{body}}
-    </div>
-  </div>
+<!--For Testing-->
+  <p id="thetest"></p>
 
 
-</script>
   <!--SCRIPTS-->
     <script src="js\javascript.js"></script>
   </body>

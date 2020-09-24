@@ -1,10 +1,47 @@
-var source = document.getElementById("entry-template").innerHTML;
-var template = Handlebars.compile(source);
-var context = { title: "My New Post test", body: "This is my first paadadaaaddaaost!" };
-var html = template(context);
-document.getElementById("content").innerHTML = html;
+//With the help of: https://css-tricks.com/template-literals/ //
+//Head
+const head_links = {
+    index_css: "css/index.css",
+    manifest: "manifest.json"
+};
+const head = templater `<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="${'index_css'}">
+  <link rel="manifest" href="${'manifest'}">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">`;
+const call_head = head(head_links);
+//Displays here
+document.getElementById("head").innerHTML = call_head;
 
-let newdate = {
+//Navigation
+const nav_links = {
+    index: "index.html",
+    about: "about.html",
+    prevention: "whatnow.html",
+    sources: "sources.html"
+};
+const navigation = templater`<div class="insidenav" id="insidenav">
+  <a href="${'index'}">Home: Coronavirus Cases</a>
+  <a href="${'about'}">About Coronavirus</a>
+  <a href="${'prevention'}">How to prevent it</a>
+  <a href="${'sources'}">Sources</a>
+</div>`;
+const call_nav = navigation(nav_links);
+//Displays here
+document.getElementById("navigation").innerHTML = call_nav;
+
+//Need this
+function templater(strings, ...keys) {
+    return function(data) {
+        let temp = strings.slice();
+        keys.forEach((key, i) => {
+            temp[i] = temp[i] + data[key];
+        });
+        return temp.join('');
+    }
+};
+
+//To easily update when information was last entered
+let date = {
   day:24,
   month:`September`,
   year:2020,
@@ -12,7 +49,7 @@ let newdate = {
     return (`${this.day} ${this.month} ${this.year}`);
   }
 };
-document.getElementById("as_of").innerHTML = newdate.saydate();
+document.getElementById("as_of").innerHTML = date.saydate();
 
 var country = {
 	"australia": {
