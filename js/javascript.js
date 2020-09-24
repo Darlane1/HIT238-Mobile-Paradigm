@@ -4,8 +4,7 @@ const head_links = {
     index_css: "css/index.css",
     manifest: "manifest.json"
 };
-const head = templater `<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="${'index_css'}">
+const head = templater `<link rel="stylesheet" href="${'index_css'}">
   <link rel="manifest" href="${'manifest'}">
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">`;
 const call_head = head(head_links);
