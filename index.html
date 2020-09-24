@@ -56,7 +56,20 @@
       <p id="message">Only Australia is available for the time being.</p>
     </div>
   </div>
-  </body>
+  <p id="content"></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script id="entry-template" type="text/x-handlebars-template">
+  <div class="entry">
+    <h1>{{title}}</h1>
+    <div class="body">
+      {{body}}
+    </div>
+  </div>
+
+
+</script>
   <!--SCRIPTS-->
-  <script src="js\javascript.js"></script>
+    <script src="js\javascript.js"></script>
+  </body>
 </html>

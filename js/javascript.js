@@ -1,3 +1,10 @@
+var source = document.getElementById("entry-template").innerHTML;
+var template = Handlebars.compile(source);
+var context = { title: "My New Post test", body: "This is my first paadadavvaaddaaost!" };
+var html = template(context);
+document.getElementById("content").innerHTML = html;
+
+
 var date = {
   "day":"20",
   "month":"September",

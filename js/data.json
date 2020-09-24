@@ -1,5 +1,5 @@
 {
-  "australia" : [
+  "australia" :
       {
       "aus":{
         "state":"Australia",
@@ -40,7 +40,13 @@
         "state":"Tasmania",
         "deaths":"13",
         "caseno":"0"
-      }
+      },
+    "usa": {
+			"usa": {
+				 "state": "United States of America",
+  			 "deaths": "423",
+  			 "caseno": "423516"
+    			}
+    		}
     }
-  ]
 }

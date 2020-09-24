@@ -1,2 +1,3 @@
 # HIT238-Mobile-Paradigm
-HIT238 Assignment 2 
+For HIT238 Assignment 2
+By Darlane Tang S314609
