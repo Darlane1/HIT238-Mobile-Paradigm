@@ -1,0 +1,20 @@
+{
+  "name": "hit238",
+  "version": "1.0.0",
+  "description": "Assignment 2. A web application about COVID19",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Darlane1/HIT238-Mobile-Paradigm"
+  },
+  "keywords": [
+    "hit238",
+    "covid",
+    "cool"
+  ],
+  "author": "Darlane",
+  "license": "ISC"
+}
