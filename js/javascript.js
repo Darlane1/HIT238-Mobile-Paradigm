@@ -50,6 +50,57 @@ let date = {
 };
 document.getElementById("as_of").innerHTML = date.saydate();
 
+var xya="";
+var test = {
+	"australia": [
+    {
+			"name": "Australia",
+			"active": "26,808",
+			"deaths": "832"
+		},
+		{
+			"name": "Northern Territory",
+			"active": "0",
+			"deaths": "0"
+		},
+		{
+			"name": "Queensland",
+			"active": "0",
+			"deaths": "0"
+		},
+    {
+			"name": "South Australia",
+			"active": "0",
+			"deaths": "0"
+		},
+    {
+			"name": "Western Australia",
+			"active": "0",
+			"deaths": "0"
+		},
+    {
+			"name": "Victoria",
+			"active": "0",
+			"deaths": "0"
+		},
+    {
+			"name": "New South Wales",
+			"active": "0",
+			"deaths": "0"
+		},
+    {
+			"name": "Tasmania",
+			"active": "0",
+			"deaths": "0"
+		}
+	]
+};
+for (i in test.australia) {
+  xya += test.australia[i].name +"<br>";
+};
+console.log(xya);
+document.getElementById('thetest').innerHTML = xya;
+
 var country = {
 	"australia": {
 		"aus": {
