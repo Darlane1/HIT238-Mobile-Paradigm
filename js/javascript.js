@@ -10,6 +10,7 @@ if ('serviceWorker' in navigator) {
     });
   });
 };
+
 //With the help of: https://css-tricks.com/template-literals/ //
 //Head
 const head_links = {
@@ -60,7 +61,10 @@ let date = {
     return (`${this.day} ${this.month} ${this.year}`);
   }
 };
-document.getElementById("as_of").innerHTML = date.saydate();
+var span = document.getElementById("as_of");
+span.textContent = date.saydate();
+
+//document.getElementById("as_of").innerHTML = date.saydate();
 
 var country = {
 	"australia": {
