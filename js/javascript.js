@@ -5,7 +5,7 @@ fetch (myRequest)
     return response.json();
   })
   .then(function(data){
-    console.log(data);
+    console.log(JSON.parse(data));
   });
 
 
@@ -126,7 +126,7 @@ var country = {
 		}
 	};
 
-
+console.log(country);
 //Ausrtalia has states, so if Australia is chosen, the states select box will show
 function show_state(){
   if(document.getElementById('country').value=='1'){
