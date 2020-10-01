@@ -2,9 +2,14 @@
   "australia" :
       {
       "aus":{
-        "state":"Australia",
+        "state":"Auaastralia test",
         "deaths":"832",
         "caseno":"26,808"
+      },
+      "test":{
+        "state":"testing",
+        "deaths":"dada",
+        "caseno":"312,da"
       },
       "nt":{
         "state":"Northern Territory",
