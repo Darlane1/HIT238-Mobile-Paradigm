@@ -6,8 +6,11 @@ var urlsToCache = [
   'about.html',
   'whatnow.html',
   'sources.html',
+  'manifest.json',
+  'sw.js',
   '/css/index.css',
   '/js/javascript.js',
+  '/js/data.json',
   '/img/mask.png',
   '/img/placeholder.png'
 ];
@@ -44,7 +47,7 @@ self.addEventListener('fetch', function(event) {
       .then(function(response) {
         // Cache hit - return response
         if (response) {
-          console.log('success fetch');
+          console.log('success fetch cache');
           return response;
         }
         return fetch(event.request);

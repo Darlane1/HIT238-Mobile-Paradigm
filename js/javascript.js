@@ -1,3 +1,22 @@
+var myInit = {
+  method: 'GET',
+  headers: {
+    'Content-Type':'application/json'
+  },
+  mode:'cors',
+  cache:'default'
+};
+
+let myRequest = new Request("/js/data.json", myInit);
+
+fetch (myRequest)
+  .then(function(response){
+    return response.json();
+  })
+  .then(function(data){
+    console.log(data);
+  });
+
 // service worker //
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -118,7 +137,7 @@ var country = {
 		}
 	};
 
-
+console.log(country);
 //Ausrtalia has states, so if Australia is chosen, the states select box will show
 function show_state(){
   if(document.getElementById('country').value=='1'){
