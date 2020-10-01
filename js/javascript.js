@@ -17,7 +17,6 @@ fetch (myRequest)
     console.log(data);
   });
 
-
 // service worker //
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -81,7 +80,10 @@ let date = {
     return (`${this.day} ${this.month} ${this.year}`);
   }
 };
-document.getElementById("as_of").innerHTML = date.saydate();
+var span = document.getElementById("as_of");
+span.textContent = date.saydate();
+
+//document.getElementById("as_of").innerHTML = date.saydate();
 
 var country = {
 	"australia": {
