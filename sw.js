@@ -12,7 +12,11 @@ var urlsToCache = [
   '/js/javascript.js',
   '/js/data.json',
   '/img/mask.png',
-  '/img/placeholder.png'
+  '/img/placeholder.png',
+  '/img/48x48.png',
+  '/img/96x96.png',
+  '/img/144x144.png',
+  '/img/192x192.png'
 ];
 
 self.addEventListener('install', function(event) {

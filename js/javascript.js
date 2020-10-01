@@ -15,6 +15,7 @@ fetch (myRequest)
   })
   .then(function(data){
     console.log(data);
+    let data_ = data;
   });
 
 // service worker //
