@@ -6,6 +6,8 @@ var urlsToCache = [
   'about.html',
   'whatnow.html',
   'sources.html',
+  'manifest.json',
+  'sw.js',
   '/css/index.css',
   '/js/javascript.js',
   '/js/data.json',

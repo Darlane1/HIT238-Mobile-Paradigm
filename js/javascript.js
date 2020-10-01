@@ -1,11 +1,20 @@
-let myRequest = new Request("/js/data.json");
+var myInit = {
+  method: 'GET',
+  headers: {
+    'Content-Type':'application/json'
+  },
+  mode:'cors',
+  cache:'default'
+};
+
+let myRequest = new Request("/js/data.json", myInit);
 
 fetch (myRequest)
   .then(function(response){
     return response.json();
   })
   .then(function(data){
-    console.log(JSON.parse(data));
+    console.log(data);
   });
 
 
