@@ -1,3 +1,4 @@
+//Attempting to fetch data.json//
 var myInit = {
   method: 'GET',
   headers: {
@@ -31,6 +32,7 @@ if ('serviceWorker' in navigator) {
   });
 };
 
+//Injecting html using javascript//
 //With the help of: https://css-tricks.com/template-literals/ //
 //Head
 const head_links = {
@@ -72,7 +74,7 @@ function templater(strings, ...keys) {
     }
 };
 
-//To easily update when information was last entered
+//To easily update date when information was last entered
 let date = {
   day:24,
   month:`September`,
@@ -81,11 +83,12 @@ let date = {
     return (`${this.day} ${this.month} ${this.year}`);
   }
 };
+//Display date in index.html
 var span = document.getElementById("as_of");
 span.textContent = date.saydate();
 
-//document.getElementById("as_of").innerHTML = date.saydate();
-
+//Temporary data storage
+//Still trying to figure out to how to do
 var country = {
 	"australia": {
 		"aus": {
@@ -153,13 +156,14 @@ function showcase(){
   var state_value = document.getElementById('state').value;
   var _usa = document.getElementById('country').value =='2';
 
-//if user does not enter any country or state, an alert will tell user to enter country
+//if user does not enter any country or state, an alert will tell user to enter country,
+//otherwise, link 1 & 2 will show as normal
   if (document.getElementById('country').value > 0){
   document.getElementById("hide_count").style.display="block";
   document.getElementsByClassName("_link")[0].style.display="block";
   document.getElementsByClassName("_link")[1].style.display="block";}
   else {alert("Please Enter A Country");}
-//Will show information based on what user picks
+//Will show information based on what country and state user picks
   if (state_value =='0' && _australia){
     document.getElementById('showcases').innerHTML = country.australia.aus.caseno;
     document.getElementById("state_name").innerHTML = country.australia.aus.state;}

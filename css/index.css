@@ -35,7 +35,7 @@ select, button {
   transition: 0.3s;
 }
 .insidenav a:hover{
-  text-decoration:underline;
+  text-decoration: underline;
   transition: .2s ease-in-out;
   transform: scale(1.1);
 }
@@ -81,33 +81,31 @@ img{
   margin-right: auto;
   display:block;
 }
-._link{
+._link, ._link2{
   display:none;
   transition:0.3s;
   color: green;
 }
-._link2{
-  color: green;
+.left_link, .right_link{
   transition:0.3s;
+  color: green;
 }
-._link:hover, ._link2:hover{
+._link:hover, ._link2:hover, .left_link:hover, .right_link:hover{
   transform:scale(1.1);
   transition: .2s ease-in-out;
+  /*Change this color*/
   color:pink;
 }
 #state{
-  display:none
+  display:none;
 }
-#pls_pick{
-  color: red;
-  text-align: center;
-}
-/*When screen is smaller that 700px, below will change*/
+
+/*When screen is smaller that 700px, change below will apply*/
 @media screen and (max-width: 700px) {
   img{
     width:100%;
   }
-  ._link,._link2{
+  ._link,._link2, .right_link, .left_link{
     width:100%;
     text-align: center;
     padding:3px;
