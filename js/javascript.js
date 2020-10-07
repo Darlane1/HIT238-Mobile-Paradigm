@@ -54,7 +54,7 @@ const nav_links = {
     sources: "sources.html"
 };
 const navigation = templater`<div class="insidenav" id="insidenav">
-  <a href="${'index'}">Home: Coronavirus Cases</a>
+  <a href="${'index'}">Coronavirus Count</a>
   <a href="${'about'}">About Coronavirus</a>
   <a href="${'prevention'}">How to prevent it</a>
   <a href="${'sources'}">Sources</a>
