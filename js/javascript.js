@@ -1,3 +1,61 @@
+let obj = [
+  {
+	"name": "Australia",
+  "no_case":26808,
+  "state":[
+    {
+      "state_name":"Northern Territory",
+      "no_case":0
+    },
+    {
+      "state_name":"Queensland",
+      "no_case":27
+    },
+    {
+      "state_name":"Victoria",
+      "no_case":991
+    },
+    {
+      "state_name":"New South Wales",
+      "no_case":148
+    },
+    {
+      "state_name":"Western Australia",
+      "no_case":5
+    },
+    {
+      "state_name":"South Australia",
+      "no_case":0
+    },
+    {
+      "state_name":"Tasmania",
+      "no_case":0
+    }
+  ],
+}, {
+	"name": "United States",
+	"no_case": 423516
+},{
+  "name":"India",
+  "no_case":902397
+}];
+console.log(obj);
+//Getting json with xmlh request
+let requestURL = '/js/data.json';
+let request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+
+request.onload = function(){
+  //Turns json into an object
+  const countries = request.response;
+  const countriessrt = JSON.stringify(countries);
+  console.log(countries);
+  console.log(countriessrt);
+};
+
+
 // service worker //
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -10,26 +68,6 @@ if ('serviceWorker' in navigator) {
     });
   });
 };
-//Attempting to fetch data.json//
-var myInit = {
-  method: 'GET',
-  headers: {
-    'Content-Type':'application/json'
-  },
-  mode:'cors',
-  cache:'default'
-};
-
-let myRequest = new Request("/js/data.json", myInit);
-
-fetch (myRequest)
-  .then(function(response){
-    return response.json();
-  })
-  .then(function(data){
-    console.log(data);
-    let data_ = data;
-  });
 
 //Injecting html using javascript//
 //With the help of: https://css-tricks.com/template-literals/ //
