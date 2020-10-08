@@ -1,4 +1,4 @@
-let obj = [
+let country = [
   {
 	"name": "Australia",
   "no_case":26808,
@@ -33,28 +33,13 @@ let obj = [
     }
   ],
 }, {
-	"name": "United States",
+	"name": "United States of America",
 	"no_case": 423516
 },{
   "name":"India",
   "no_case":902397
 }];
-console.log(obj);
-//Getting json with xmlh request
-let requestURL = '/js/data.json';
-let request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-
-request.onload = function(){
-  //Turns json into an object
-  const countries = request.response;
-  const countriessrt = JSON.stringify(countries);
-  console.log(countries);
-  console.log(countriessrt);
-};
-
+console.log(country);
 
 // service worker //
 if ('serviceWorker' in navigator) {
@@ -124,60 +109,6 @@ let date = {
 var span = document.getElementById("as_of");
 span.textContent = date.saydate();
 
-//Temporary data storage
-//Still trying to figure out to how to do
-var country = {
-	"australia": {
-		"aus": {
-			"state": "Australia",
-			"deaths": "832",
-			"caseno": "26,808"
-		},
-		"nt": {
-			"state": "Northern Territory",
-			"deaths": "0",
-			"caseno": "0"
-		},
-		"qld": {
-			"state": "Queensland",
-			"deaths": "6",
-			"caseno": "27"
-		},
-    "vic": {
-			"state": "Victoria",
-			"deaths": "745",
-			"caseno": "991"
-		},
-    "nsw": {
-			"state": "New South Wales",
-			"deaths": "52",
-			"caseno": "148"
-		},
-    "wa": {
-			"state": "Western Australia",
-			"deaths": "9",
-			"caseno": "5"
-		},
-		"sa": {
-			"state": "South Australia",
-			"deaths": "4",
-			"caseno": "0"
-		},
-		"tas": {
-			"state": "Tasmania",
-			"deaths": "13",
-			"caseno": "0"
-		}
-  },
-		"usa": {
-			"usa": {
-				"state": "United States of America",
-				"deaths": "423",
-				"caseno": "423516"
-			}
-		}
-	};
-
 //Ausrtalia has states, so if Australia is chosen, the states select box will show
 function show_state(){
   if(document.getElementById('country').value=='1'){
@@ -186,14 +117,11 @@ function show_state(){
     document.getElementById('state').style.display="none";}
   };
 
-
 //Main 'show me' button
 function showcase(){
   var _australia = document.getElementById('country').value == '1';
   var state_value = document.getElementById('state').value;
   var _usa = document.getElementById('country').value =='2';
-
-
 //if user does not enter any country or state, an alert will tell user to enter country,
 //otherwise, link 1 & 2 will show as normal
   if (document.getElementById('country').value > 0){
@@ -203,27 +131,26 @@ function showcase(){
   else {alert("Please Enter A Country");}
 //Will show information based on what country and state user picks
   if (state_value =='0' && _australia){
-    document.getElementById("state_name").innerHTML = country.australia.aus.state;}
+    document.getElementById("state_name").innerHTML = country[0].name;}
   else if (state_value == '1' && _australia){
-    document.getElementById("state_name").innerHTML = country.australia.nt.state;}
+    document.getElementById("state_name").innerHTML = country[0].state[0].state_name;}
   else if (state_value == '2' && _australia){
-    document.getElementById("state_name").innerHTML = country.australia.qld.state;}
+    document.getElementById("state_name").innerHTML = country[0].state[1].state_name;}
   else if (state_value == '3' && _australia){
-    document.getElementById("state_name").innerHTML = country.australia.vic.state;}
+    document.getElementById("state_name").innerHTML = country[0].state[2].state_name;}
   else if (state_value == '4' && _australia){
-    document.getElementById("state_name").innerHTML = country.australia.nsw.state;}
+    document.getElementById("state_name").innerHTML = country[0].state[3].state_name;}
   else if (state_value == '5' && _australia){
-    document.getElementById("state_name").innerHTML = country.australia.wa.state;}
+    document.getElementById("state_name").innerHTML = country[0].state[4].state_name;}
   else if (state_value == '6' && _australia){
-    document.getElementById("state_name").innerHTML = country.australia.sa.state;}
+    document.getElementById("state_name").innerHTML = country[0].state[5].state_name;}
   else if (state_value == '7' && _australia){
-    document.getElementById("state_name").innerHTML = country.australia.tas.state;}
+    document.getElementById("state_name").innerHTML = country[0].state[6].state_name;}
 
   if (_usa){
-    document.getElementById("state_name").innerHTML = country.usa.usa.state;
+    document.getElementById("state_name").innerHTML = country[1].name;
   }
 };
-
 
 //Side Navigation
 function opennav(){
