@@ -1,4 +1,3 @@
-console.log("jquery connected");
 //Counter
 //When showcounter button is clicked
   $('#showcounter').click(function(){

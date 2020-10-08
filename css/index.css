@@ -105,6 +105,9 @@ img{
   img{
     width:100%;
   }
+  #hide_count h1,h3{
+    line-height: normal;
+  }
   ._link,._link2, .right_link, .left_link{
     width:100%;
     text-align: center;
