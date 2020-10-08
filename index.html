@@ -3,10 +3,12 @@
   <head>
     <title>Coronavirus Count</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/libraries/jquery-3.5.1.min.js"></script>
+    <script  src="/libraries/countUp.js"></script>
+    <!--Bootstrap for style-->
       <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
     <!--In javascript-->
     <span id="head"></span>
-    <script type="module" src="js/module.js"></script>
   </head>
   <body>
     <!--navigation button-->
@@ -54,9 +56,9 @@
   </div>
 
 <!--For Testing-->
-  <h1 class="jumbo" id="count_anim">0</h1>
-  <input type="button" value="Update:" id="update" class="inlineLeft" style="margin-right:5px">
-	<input type="text" value="6789" id="updateVal" style="width:80px">
+  <div id="counter">0</div>
+  <button id="start-button">start</button>
+  <button id="update-button">update</button>
   <p id="thetest"></p>
 
 

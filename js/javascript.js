@@ -1,3 +1,14 @@
+//Countup animation
+$('#start-button').click(function(){
+  var c = new CountUp("counter",0,4321);
+  c.start();
+});
+
+$('#update-button').click(function(){
+  var c = new CountUp("counter",0,100);
+  c.start(0);
+});
+
 // service worker //
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -192,7 +203,7 @@ function showcase(){
     document.getElementById('showcases').innerHTML = country.usa.usa.caseno;
     document.getElementById("state_name").innerHTML = country.usa.usa.state;
   }
-}
+};
 
 //Side Navigation
 function opennav(){
@@ -202,4 +213,4 @@ if (document.getElementById('insidenav').style.width == '250px')
 else {
   document.getElementById('insidenav').style.width = "250px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";}
-}
+};
