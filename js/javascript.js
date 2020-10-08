@@ -38,6 +38,30 @@ let country = [
 },{
   "name":"India",
   "no_case":902397
+},{
+  "name":"Brazil",
+  "no_case":65423
+},{
+  "name":"Russia",
+  "no_case":439680
+},{
+  "name":"Spain",
+  "no_case":4135
+},{
+  "name":"Italy",
+  "no_case":4543
+},{
+  "name":"UK",
+  "no_case":322921
+},{
+  "name":"Japan",
+  "no_case":43263
+},{
+  "name":"Iraq",
+  "no_case":412343
+},{
+  "name":"China",
+  "no_case":0
 }];
 console.log(country);
 

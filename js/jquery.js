@@ -9,21 +9,21 @@
 
   //If select value is 1 , counter will go up to 3123
   if (state_value=='0' && _australia){
-    c.update(26808)}
+    c.update(country[0].no_case)}
     else if (state_value=='1' && _australia){
-    c.update(0)}
+    c.update(country[0].state[0].no_case)}
     else if (state_value=='2' && _australia){
-    c.update(27)}
+    c.update(country[0].state[1].no_case)}
     else if (state_value=='3' && _australia){
-    c.update(991)}
+    c.update(country[0].state[2].no_case)}
     else if (state_value=='4' && _australia){
-    c.update(148)}
+    c.update(country[0].state[3].no_case)}
     else if (state_value=='5' && _australia){
-    c.update(5)}
+    c.update(country[0].state[4].no_case)}
     else if (state_value=='6' && _australia){
-    c.update(0)}
+    c.update(country[0].state[5].no_case)}
     else if (state_value=='7' && _australia){
-    c.update(0)}
+    c.update(country[0].state[6].no_case)}
     else if (_usa){
-    c.update(423516)}
+    c.update(country[1].no_case)}
 });

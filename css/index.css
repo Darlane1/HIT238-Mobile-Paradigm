@@ -3,7 +3,7 @@ html, body{
 }
 .navbutton{
   cursor:pointer;
-  font-size: 32px;
+  font-size: 40px;
 }
 select, button {
   padding:10px;
