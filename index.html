@@ -3,8 +3,11 @@
   <head>
     <title>Coronavirus Count</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--JQUERY-->
     <script src="/libraries/jquery-3.5.1.min.js"></script>
+    <!--COUNTUP-->
     <script  src="/libraries/countUp.js"></script>
+
     <!--Bootstrap for style-->
       <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
     <!--In javascript-->
@@ -44,7 +47,7 @@
       <option value="6">SA</option>
       <option value="7">TAS</option>
     </select>
-    <button onclick="showcase()">Show me</button>
+    <button id="showcounter" onclick="showcase()">Show me</button>
 
     <div style="clear:both">
       <div class="text-wrapper">
@@ -56,14 +59,13 @@
   </div>
 
 <!--For Testing-->
-  <div id="counter">0</div>
-  <button id="start-button">start</button>
-  <button id="update-button">update</button>
+
   <p id="thetest"></p>
 
 
   <!--SCRIPTS-->
     <script src="js\javascript.js"></script>
-
+    <!--Jquery.js-->
+    <script src="js\jquery.js"></script>
   </body>
 </html>
