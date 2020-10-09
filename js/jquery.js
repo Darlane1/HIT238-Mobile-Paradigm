@@ -7,7 +7,7 @@
   var _usa = $("#country").val()=='2';
 
 
-  //If select value is 1 , counter will go up to 3123
+  //lots of if statements and will show numer of cases from the data in javascript.js
   if (state_value=='0' && _australia){
     c.update(country[0].no_case)}
     else if (state_value=='1' && _australia){

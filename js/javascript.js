@@ -1,70 +1,3 @@
-let country = [
-  {
-	"name": "Australia",
-  "no_case":26808,
-  "state":[
-    {
-      "state_name":"Northern Territory",
-      "no_case":0
-    },
-    {
-      "state_name":"Queensland",
-      "no_case":27
-    },
-    {
-      "state_name":"Victoria",
-      "no_case":991
-    },
-    {
-      "state_name":"New South Wales",
-      "no_case":148
-    },
-    {
-      "state_name":"Western Australia",
-      "no_case":5
-    },
-    {
-      "state_name":"South Australia",
-      "no_case":0
-    },
-    {
-      "state_name":"Tasmania",
-      "no_case":0
-    }
-  ],
-}, {
-	"name": "United States of America",
-	"no_case": 423516
-},{
-  "name":"India",
-  "no_case":902397
-},{
-  "name":"Brazil",
-  "no_case":65423
-},{
-  "name":"Russia",
-  "no_case":439680
-},{
-  "name":"Spain",
-  "no_case":4135
-},{
-  "name":"Italy",
-  "no_case":4543
-},{
-  "name":"UK",
-  "no_case":322921
-},{
-  "name":"Japan",
-  "no_case":43263
-},{
-  "name":"Iraq",
-  "no_case":412343
-},{
-  "name":"China",
-  "no_case":0
-}];
-console.log(country);
-
 // service worker //
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -132,6 +65,73 @@ let date = {
 //Display date in index.html
 var span = document.getElementById("as_of");
 span.textContent = date.saydate();
+
+const country = [
+  {
+	"name": "Australia",
+  "no_case":26808,
+  "state":[
+    {
+      "state_name":"Northern Territory",
+      "no_case":0
+    },
+    {
+      "state_name":"Queensland",
+      "no_case":27
+    },
+    {
+      "state_name":"Victoria",
+      "no_case":991
+    },
+    {
+      "state_name":"New South Wales",
+      "no_case":148
+    },
+    {
+      "state_name":"Western Australia",
+      "no_case":5
+    },
+    {
+      "state_name":"South Australia",
+      "no_case":0
+    },
+    {
+      "state_name":"Tasmania",
+      "no_case":0
+    }
+  ],
+}, {
+	"name": "United States of America",
+	"no_case": 423516
+},{
+  "name":"India",
+  "no_case":902397
+},{
+  "name":"Brazil",
+  "no_case":65423
+},{
+  "name":"Russia",
+  "no_case":439680
+},{
+  "name":"Spain",
+  "no_case":4135
+},{
+  "name":"Italy",
+  "no_case":4543
+},{
+  "name":"UK",
+  "no_case":322921
+},{
+  "name":"Japan",
+  "no_case":43263
+},{
+  "name":"Iraq",
+  "no_case":412343
+},{
+  "name":"China",
+  "no_case":0
+}];
+console.log(country);
 
 //Ausrtalia has states, so if Australia is chosen, the states select box will show
 function show_state(){

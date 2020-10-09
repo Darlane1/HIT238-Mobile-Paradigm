@@ -2,12 +2,12 @@ var CACHE_TITLE = 'covidcounter';
 var CACHE_VERSION = 'v1';
 var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
 var urlsToCache = [
-  'index.html',
-  'about.html',
-  'whatnow.html',
-  'sources.html',
-  'manifest.json',
-  'sw.js',
+  '/index.html',
+  '/about.html',
+  '/whatnow.html',
+  '/sources.html',
+  '/manifest.json',
+  '/sw.js',
   '/css/index.css',
   '/js/javascript.js',
   '/js/data.json',
