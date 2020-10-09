@@ -170,37 +170,26 @@ function showcase(){
     document.getElementById("state_name").innerHTML = country[0].state[5].state_name;}
   else if (state_value == '7' && _australia){
     document.getElementById("state_name").innerHTML = country[0].state[6].state_name;}
-
-  if (country_value == '2'){
-    document.getElementById("state_name").innerHTML = country[1].name;
-  }
+  else if (country_value == '2'){
+    document.getElementById("state_name").innerHTML = country[1].name}
   else if (country_value == '3'){
-    document.getElementById("state_name").innerHTML = country[2].name
-  }
+    document.getElementById("state_name").innerHTML = country[2].name}
   else if (country_value == '4'){
-    document.getElementById("state_name").innerHTML = country[3].name
-  }
+    document.getElementById("state_name").innerHTML = country[3].name}
   else if (country_value == '5'){
-    document.getElementById("state_name").innerHTML = country[4].name
-  }
+    document.getElementById("state_name").innerHTML = country[4].name}
   else if (country_value == '6'){
-    document.getElementById("state_name").innerHTML = country[5].name
-  }
+    document.getElementById("state_name").innerHTML = country[5].name}
   else if (country_value == '7'){
-    document.getElementById("state_name").innerHTML = country[6].name
-  }
+    document.getElementById("state_name").innerHTML = country[6].name}
   else if (country_value == '8'){
-    document.getElementById("state_name").innerHTML = country[7].name
-  }
+    document.getElementById("state_name").innerHTML = country[7].name}
   else if (country_value == '9'){
-    document.getElementById("state_name").innerHTML = country[8].name
-  }
+    document.getElementById("state_name").innerHTML = country[8].name}
   else if (country_value == '10'){
-    document.getElementById("state_name").innerHTML = country[9].name
-  }
+    document.getElementById("state_name").innerHTML = country[9].name}
   else if (country_value == '11'){
-    document.getElementById("state_name").innerHTML = country[10].name
-  }
+    document.getElementById("state_name").innerHTML = country[10].name}
 };
 
 //Side Navigation
