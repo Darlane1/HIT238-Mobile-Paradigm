@@ -102,19 +102,19 @@ const country = [
   ],
 }, {
 	"name": "United States of America",
-	"no_case": 5025193
+	"no_case": 2595229
 },{
   "name":"India",
-  "no_case":5906069
+  "no_case":895982
 },{
   "name":"Brazil",
-  "no_case":4414564
+  "no_case":465941
 },{
   "name":"Russia",
-  "no_case":1009421
+  "no_case":240560
 },{
-  "name":"Spain",
-  "no_case":"N/A"
+  "name":"France",
+  "no_case":"538811"
 },{
   "name":"Italy",
   "no_case":4543
@@ -126,7 +126,7 @@ const country = [
   "no_case":5180
 },{
   "name":"Iran",
-  "no_case":61048
+  "no_case":62901
 },{
   "name":"China",
   "no_case":206
