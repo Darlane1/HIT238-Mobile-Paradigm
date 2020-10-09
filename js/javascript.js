@@ -120,7 +120,7 @@ const country = [
   "no_case":4543
 },{
   "name":"Mexico",
-  "no_case":137789	
+  "no_case":137789
 },{
   "name":"Japan",
   "no_case":5180
@@ -137,7 +137,7 @@ console.log(country);
 function show_state(){
   if(document.getElementById('country').value=='1'){
   document.getElementById('state').style.display="block"}
-  else if(document.getElementById('country').value=='2'){
+  else if(document.getElementById('country').value > 2){
     document.getElementById('state').style.display="none";}
   };
 
