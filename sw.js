@@ -2,24 +2,24 @@ var CACHE_TITLE = 'covidcounter';
 var CACHE_VERSION = 'v1';
 var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
 var urlsToCache = [
-  '/index.html',
-  '/about.html',
-  '/whatnow.html',
-  '/sources.html',
-  '/manifest.json',
-  '/package.json',
-  '/sw.js',
-  '/css/index.css',
-  '/js/javascript.js',
-  '/js/jquery.js',
-  '/libraries/countUp.js',
-  '/libraries/jquery-3.5.1.min.js',
-  '/img/mask.png',
-  '/img/placeholder.png',
-  '/img/48x48.png',
-  '/img/96x96.png',
-  '/img/144x144.png',
-  '/img/192x192.png'
+  'index.html',
+  'about.html',
+  'whatnow.html',
+  'sources.html',
+  'manifest.json',
+  'package.json',
+  'sw.js',
+  'css/index.css',
+  'js/javascript.js',
+  'js/jquery.js',
+  'libraries/countUp.js',
+  'libraries/jquery-3.5.1.min.js',
+  'img/mask.png',
+  'img/placeholder.png',
+  'img/48x48.png',
+  'img/96x96.png',
+  'img/144x144.png',
+  'img/192x192.png'
 ];
 
 self.addEventListener('install', function(event) {
