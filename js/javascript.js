@@ -55,8 +55,8 @@ function templater(strings, ...keys) {
 
 //To easily update date when information was last entered
 let date = {
-  day:24,
-  month:`September`,
+  day:9,
+  month:`October`,
   year:2020,
   saydate(){
     return (`${this.day} ${this.month} ${this.year}`);
@@ -69,7 +69,7 @@ span.textContent = date.saydate();
 const country = [
   {
 	"name": "Australia",
-  "no_case":26808,
+  "no_case":242,
   "state":[
     {
       "state_name":"Northern Territory",
@@ -77,23 +77,23 @@ const country = [
     },
     {
       "state_name":"Queensland",
-      "no_case":27
+      "no_case":4
     },
     {
       "state_name":"Victoria",
-      "no_case":991
+      "no_case":195
     },
     {
       "state_name":"New South Wales",
-      "no_case":148
+      "no_case":27
     },
     {
       "state_name":"Western Australia",
-      "no_case":5
+      "no_case":13
     },
     {
       "state_name":"South Australia",
-      "no_case":0
+      "no_case":3
     },
     {
       "state_name":"Tasmania",
@@ -102,34 +102,34 @@ const country = [
   ],
 }, {
 	"name": "United States of America",
-	"no_case": 423516
+	"no_case": 5025193
 },{
   "name":"India",
-  "no_case":902397
+  "no_case":5906069
 },{
   "name":"Brazil",
-  "no_case":65423
+  "no_case":4414564
 },{
   "name":"Russia",
-  "no_case":439680
+  "no_case":1009421
 },{
   "name":"Spain",
-  "no_case":4135
+  "no_case":"N/A"
 },{
   "name":"Italy",
   "no_case":4543
 },{
   "name":"UK",
-  "no_case":322921
+  "no_case":"N/A"
 },{
   "name":"Japan",
-  "no_case":43263
+  "no_case":5180
 },{
-  "name":"Iraq",
-  "no_case":412343
+  "name":"Iran",
+  "no_case":61048
 },{
   "name":"China",
-  "no_case":0
+  "no_case":206
 }];
 console.log(country);
 
@@ -145,7 +145,7 @@ function show_state(){
 function showcase(){
   var _australia = document.getElementById('country').value == '1';
   var state_value = document.getElementById('state').value;
-  var _usa = document.getElementById('country').value =='2';
+  var country_value = document.getElementById('country').value;
 //if user does not enter any country or state, an alert will tell user to enter country,
 //otherwise, link 1 & 2 will show as normal
   if (document.getElementById('country').value > 0){
@@ -171,8 +171,35 @@ function showcase(){
   else if (state_value == '7' && _australia){
     document.getElementById("state_name").innerHTML = country[0].state[6].state_name;}
 
-  if (_usa){
+  if (country_value == '2'){
     document.getElementById("state_name").innerHTML = country[1].name;
+  }
+  else if (country_value == '3'){
+    document.getElementById("state_name").innerHTML = country[2].name
+  }
+  else if (country_value == '4'){
+    document.getElementById("state_name").innerHTML = country[3].name
+  }
+  else if (country_value == '5'){
+    document.getElementById("state_name").innerHTML = country[4].name
+  }
+  else if (country_value == '6'){
+    document.getElementById("state_name").innerHTML = country[5].name
+  }
+  else if (country_value == '7'){
+    document.getElementById("state_name").innerHTML = country[6].name
+  }
+  else if (country_value == '8'){
+    document.getElementById("state_name").innerHTML = country[7].name
+  }
+  else if (country_value == '9'){
+    document.getElementById("state_name").innerHTML = country[8].name
+  }
+  else if (country_value == '10'){
+    document.getElementById("state_name").innerHTML = country[9].name
+  }
+  else if (country_value == '11'){
+    document.getElementById("state_name").innerHTML = country[10].name
   }
 };
 
