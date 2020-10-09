@@ -1,5 +1,5 @@
 var CACHE_TITLE = 'covidcounter';
-var CACHE_VERSION = 'v1';
+var CACHE_VERSION = 'v2';
 var CACHE_NAME = CACHE_TITLE + '-' + CACHE_VERSION;
 var urlsToCache = [
   'index.html',

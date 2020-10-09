@@ -119,8 +119,8 @@ const country = [
   "name":"Italy",
   "no_case":4543
 },{
-  "name":"UK",
-  "no_case":"N/A"
+  "name":"Mexico",
+  "no_case":137789	
 },{
   "name":"Japan",
   "no_case":5180
