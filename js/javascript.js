@@ -16,7 +16,7 @@ if ('serviceWorker' in navigator) {
 //Head
 const head_links = {
     index_css: "css/index.css",
-    manifest: "manifest.json",
+    manifest: "/manifest.json",
     ios_touch: "img/192x192.png"
 };
 const head = templater `<link rel="stylesheet" href="${'index_css'}">
