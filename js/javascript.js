@@ -16,11 +16,9 @@ if ('serviceWorker' in navigator) {
 //Head
 const head_links = {
     index_css: "css/index.css",
-    manifest: "manifest.json",
     ios_touch: "img/192x192.png"
 };
 const head = templater `<link rel="stylesheet" href="${'index_css'}">
-  <link rel="manifest" href="${'manifest'}">
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" href="${'ios_touch'}">`;
 const call_head = head(head_links);
