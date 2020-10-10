@@ -19,7 +19,7 @@ const head_links = {
     ios_touch: "img/192x192.png"
 };
 const head = templater `<link rel="stylesheet" href="${'index_css'}">
-  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" href="${'ios_touch'}">`;
 const call_head = head(head_links);
 //Displays here
@@ -65,6 +65,8 @@ let date = {
 //Display date in index.html
 var span = document.getElementById("as_of");
 span.textContent = date.saydate();
+
+
 
 const country = [
   {
@@ -136,9 +138,9 @@ console.log(country);
 //Ausrtalia has states, so if Australia is chosen, the states select box will show
 function show_state(){
   if(document.getElementById('country').value=='1'){
-  document.getElementById('state').style.display="block"}
-  else if(document.getElementById('country').value > 2){
-    document.getElementById('state').style.display="none";}
+  document.getElementById('sel_state').style.display="block"}
+  else if(document.getElementById('country').value > 1){
+    document.getElementById('sel_state').style.display="none";}
   };
 
 //Main 'show me' button
@@ -196,8 +198,8 @@ function showcase(){
 function opennav(){
 if (document.getElementById('insidenav').style.width == '250px')
   {document.getElementById('insidenav').style.width = "0px";
-  document.body.style.backgroundColor = "white";}
+  document.body.style.backgroundColor = "#333333";}
 else {
   document.getElementById('insidenav').style.width = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";}
+  document.body.style.backgroundColor = "rgba(0,0,0,0.6)";}
 };
