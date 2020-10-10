@@ -4,6 +4,7 @@ html, body{
 .navbutton{
   cursor:pointer;
   font-size: 40px;
+  width:40px;
 }
 select, button {
   padding:10px;
@@ -54,6 +55,7 @@ select, button {
   background-color:transparent;
   border: 1.5px solid grey;
   text-align: center;
+  /*controls the height of the numbner that shows active cases*/
   line-height:120px;
 }
 .text-wrapper{
@@ -62,7 +64,6 @@ select, button {
 
 #state_name{
   margin:auto;
-  text-align: center;
   padding:20px;
 }
 #hide_count{
@@ -70,9 +71,6 @@ select, button {
   text-align: center;
   padding:20px;
   display:none;
-}
-#hide_count h1,h3{
-  line-height:0px;
 }
 
 img{

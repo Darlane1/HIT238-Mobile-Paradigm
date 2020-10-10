@@ -4,9 +4,13 @@
     <title>What is Coronavirus?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <span id="head"></span>
   </head>
   <body>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <!--navigation button-->
       <span class="navbutton" onclick="opennav()">&#9776;</span>
     <!--Inside navigation-->
@@ -14,12 +18,16 @@
 
 <div class="text-wrapper">
   <h1>What is coronavirus?</h1>
-    <p>Coronaviruses can make humans and animals sick. Some coronaviruses can cause illness
+    <p class="text-justify">Coronaviruses can make humans and animals sick. Some coronaviruses can cause illness
       similar to the common cold and others can cause more serious diseases, including Severe Acute
       Respiratory Syndrome (SARS) and Middle East respiratory syndrome (MERS). This new
       coronavirus originated in Hubei Province, China and the disease outbreak is named COVID-19.</p>
 <!--https://www.flaticon.com/free-icon/coronavirus_2750761-->
-    <img src="img\corona.png" alt="corona"></img>
+  <figure class="figure">
+    <img class="figure-img img-fluid" src="img/corona.png" alt="corona"></img>
+    <figcaption class="figure-caption">Figure 1: https://www.flaticon.com/free-icon/coronavirus_2750761</figcaption>
+  </figure>
+
   <h3>How it spreads</h3>
     <p>COVID-19 can spread person to person through:</p>
       <ul>
@@ -38,15 +46,19 @@
     </ul>
   <h3>The facts</h3>
     <ul>
-      <li>COVID-19 is spread by being in close contact with someone who is already infected, or by coming into contact with cough/sneeze drops from an infected person. This includes any nasal fluid, or saliva that may be remaining on any surfaces/objects.</li>
+      <li class="text-justify">COVID-19 is spread by being in close contact with someone who is already infected,
+        or by coming into contact with cough/sneeze drops from an infected person. This includes
+        ny nasal fluid, or saliva that may be remaining on any surfaces/objects.</li>
     </ul>
-    <div style="clear:both">
+    <div class="clearfix">
       <div class="text-wrapper">
         <a href="about.html" class="right_link" style="float:left">Learn More about COVID-19</a>
       <a href="sources.html" class="left_link" style="float:right">Where do these sources come from?</a>
   </div>
   </div>
 </div>
+</div>
+
 <script src="js/javascript.js"></script>
   </body>
 </html>
