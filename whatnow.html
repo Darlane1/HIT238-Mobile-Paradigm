@@ -4,9 +4,13 @@
     <title>What to do now?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <span id="head"></span>
   </head>
   <body>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <!--navigation button-->
       <span class="navbutton" onclick="opennav()">&#9776;</span>
     <!--Inside navigation-->
@@ -23,14 +27,14 @@
       <li>Wherever may be considered appropriate, utilise protective equipment such as masks and gloves.</li>
     </ul>
     <h3>What does isolate in your home mean?</h3>
-      <p>People who must isolate need to stay at home and must not attend public places, in particular
+      <p class="text-justify">People who must isolate need to stay at home and must not attend public places, in particular
         work, school, childcare or university. Only people who usually live in the household should be in
         the home.
         Do not allow visitors into the home. Where possible, get others such as friends or family who are
         not required to be isolated to get food or other necessities for you. If you must leave the home,
         such as to seek medical care, wear a mask if you have one</p>
     <h3>Should I wear a face mask?</h3>
-    <p>Both the Centers for Disease Control and Prevention (CDC) and the
+    <p class="text-justify">Both the Centers for Disease Control and Prevention (CDC) and the
       World Health Organization now recommend cloth masks for the general public,
       but earlier in the pandemic, both organizations recommended just the opposite.
       These shifting guidelines may have sowed confusion among the public
@@ -38,16 +42,20 @@
     But health experts say the evidence is clear that masks can help prevent
     the spread of COVID-19 and that the more people wearing masks, the better.</p>
     <p>Remember to use a mask!</p>
-      <img alt="mask" src="img\mask.png"></img>
+    <figure class="figure">
+      <img class="figure-img img-fluid rounded" alt="mask" src="img\mask.png"></img>
+      <figcaption class="figure-caption">Figure 1: https://www.yp.sg/wp-content/uploads/2020/04/3658330-scaled.jpg</figcaption>
+    </figure>
       <br>
-      <div style="clear:both">
+      <div class="clearfix">
         <div class="text-wrapper">
           <a href="about.html" class="right_link" style="float:left">Learn More about COVID-19</a>
         <a href="sources.html" class="left_link" style="float:right">Where do these sources come from?</a>
     </div>
     </div>
   </div>
-
+  <div class="footer">ProgessiveWeb Application by Darlane Tang S314609</div>
+</div>
     <script src="js/javascript.js"></script>
   </body>
 

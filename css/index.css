@@ -1,16 +1,27 @@
 html, body{
-  font-family: 'Alata', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background:#333333;
+  color:white;
+}
+::-webkit-scrollbar {
+display: none;
 }
 .navbutton{
   cursor:pointer;
   font-size: 40px;
+  width:40px;
 }
-select, button {
-  padding:10px;
+/*So that buttons will stay in the middle*/
+.middle{
+  margin:auto;
+  color:black;
+
+}
+
+button{
   margin:10px auto auto auto;
-  display:block;
-  cursor:pointer;
-  font-family: 'Alata', sans-serif;
   font-size: 14px;
 }
 .insidenav{
@@ -25,6 +36,8 @@ select, button {
   transition: 0.5s;
   padding-top: 60px;
   background-color: white;
+  color: black;
+  z-index: 1;
 }
 .insidenav a {
   padding: 8px 8px 8px 32px;
@@ -54,7 +67,8 @@ select, button {
   background-color:transparent;
   border: 1.5px solid grey;
   text-align: center;
-  line-height:120px;
+  /*controls the height of the numbner that shows active cases*/
+  line-height:185px;
 }
 .text-wrapper{
   padding:30px;
@@ -62,7 +76,6 @@ select, button {
 
 #state_name{
   margin:auto;
-  text-align: center;
   padding:20px;
 }
 #hide_count{
@@ -70,9 +83,6 @@ select, button {
   text-align: center;
   padding:20px;
   display:none;
-}
-#hide_count h1,h3{
-  line-height:0px;
 }
 
 img{
@@ -96,8 +106,32 @@ img{
   /*Change this color*/
   color:pink;
 }
-#state{
+#sel_state{
   display:none;
+}
+
+.btn-secondary, .btn-secondary:hover{
+  background-color: white;
+  text-shadow:none;
+  color:#333;
+  font-weight: bold;
+}
+.footer{
+  text-align: center;
+  font-weight: 100;
+}
+
+/*When screen is larger than 1600px, below will apply*/
+@media screen and (min-width: 1400px) {
+  #hide_count h1,h3{
+    line-height: normal;
+  }
+
+  .text-wrapper{
+    padding:30px;
+    width:60%;
+    margin:auto;
+  }
 }
 
 /*When screen is smaller that 700px, change below will apply*/
@@ -121,4 +155,4 @@ img{
     padding:30px;
     width:90%;
   }
-    }
+}
