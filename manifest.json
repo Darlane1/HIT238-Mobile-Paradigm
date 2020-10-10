@@ -2,7 +2,7 @@
   "name":"COVID Active Case Counter",
   "short_name":"COVID Counter",
   "description":"A progessive web application based around COVID-19 active cases",
-  "version":"2.0",
+  "version":"3.0",
   "start_url":"/HIT238-Mobile-Paradigm/",
   "display":"standalone",
   "background_color":"#ffffff",
