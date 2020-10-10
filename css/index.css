@@ -23,6 +23,10 @@ button{
   margin:10px auto auto auto;
   font-size: 14px;
 }
+
+.my-4{
+  border-color:#fff;
+}
 .insidenav{
   position: absolute;
   top: 0;
@@ -108,7 +112,9 @@ img{
 #sel_state{
   display:none;
 }
-
+.list-group li{
+  background: #333;
+}
 .btn-secondary, .btn-secondary:hover{
   background-color: white;
   text-shadow:none;
